@@ -1,0 +1,1 @@
+shutdonwn -s -t 3600
