@@ -31,12 +31,11 @@ while posts<=max_poste:
 		dlurl=re.compile('Size: <a href="(.*?)">')
 		info=dlurl.findall(urllib.request.urlopen(req).read().decode('utf-8'))
 		posts=posts+1
-		imgurl=dlurl.findall(urllib.request.urlopen(req).read().decode('utf-8'))
 		if not info:
 			continue
 		else:
 			file_name=info[0].split('/')[-1]
-			print(imgurl)
+			print(info)
 			print(file_name)
 			if 'https://' in info[0]:
 				for x in imgurl:
