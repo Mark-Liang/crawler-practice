@@ -38,10 +38,10 @@ while posts<=max_poste:
 			print(info)
 			print(file_name)
 			if 'https://' in info[0]:
-				for x in imgurl:
+				for x in info:
 					urllib.request.urlretrieve(info[0],_folder_name+'/'+file_name)
 			else:
-				for x in imgurl:
+				for x in info:
 					urllib.request.urlretrieve('http://danbooru.donmai.us'+info[0],_folder_name+'/'+file_name)
 
 
