@@ -11,7 +11,6 @@ if not os.path.exists(_folder_name):
 posts=2800000
 max_poste=2800020
 while posts<=max_poste:
-	s='http://danbooru.donmai.us'
 	url='https://danbooru.donmai.us/posts/'+str(posts)
 	"""
 	header['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
